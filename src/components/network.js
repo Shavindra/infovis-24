@@ -1,4 +1,5 @@
 import * as d3 from "d3";
+import data from "../data/sample-data.json";
 
 export function createGraph() {
   console.log("create graph init");
@@ -10,5 +11,5 @@ export function createGraph() {
     .attr("cx", 25)
     .attr("cy", 25)
     .attr("r", 25)
-    .style("fill", "purple");
+    .style("fill", data[0].colour);
 }

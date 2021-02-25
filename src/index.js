@@ -1,6 +1,7 @@
 import "./styles.css";
 
 import { createGraph } from "./components/network";
+import { initFilters } from "./components/filters";
 
 function initMain() {
   document.getElementById("app").innerHTML = `
@@ -14,8 +15,9 @@ function initMain() {
 }
 
 function initApp() {
-  createGraph();
   initMain();
+  initFilters();
+  createGraph();
 }
 
 initApp();
