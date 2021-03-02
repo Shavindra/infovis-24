@@ -1,10 +1,13 @@
+// Import d3 package through package manager
 import * as d3 from "d3";
-// Import data
+
+// Import data json from local
 // `sampleData` can be named anything.
 // usage:
 //  d3.json(sampleData)
 import sampleData from "../data/sample-data.json";
 
+// Export the function
 export function createGraph() {
   console.log("Creating graph...");
 

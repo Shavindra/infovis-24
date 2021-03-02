@@ -1,5 +1,7 @@
+// Import the css style sheet
 import "./styles.css";
 
+// Import the functions
 import { createGraph } from "./components/network-graph";
 import { initFilters } from "./components/filters";
 
@@ -16,6 +18,8 @@ function initMain() {
 // Main function to initialise the app
 function initApp() {
   initMain();
+  
+  // Call the imported the functions
   initFilters();
   createGraph();
 }
