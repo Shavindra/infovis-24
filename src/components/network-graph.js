@@ -1,6 +1,9 @@
 import * as d3 from "d3";
+// Import data
+import data from "../data/sample-data.json";
 
 export function createGraph() {
+  console.log("Creating graph...");
   d3.select("#graph")
     .append("svg")
     .attr("width", 50)
@@ -9,5 +12,5 @@ export function createGraph() {
     .attr("cx", 25)
     .attr("cy", 25)
     .attr("r", 25)
-    .style("fill", "red");
+    .style("fill", data[0].colour);
 }

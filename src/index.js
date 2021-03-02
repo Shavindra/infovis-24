@@ -1,6 +1,7 @@
 import "./styles.css";
 
 import { createGraph } from "./components/network-graph";
+import { initFilters } from "./components/filters";
 
 function initMain() {
   document.getElementById("app").innerHTML = `
@@ -12,12 +13,11 @@ function initMain() {
   `;
 }
 
-// Function to initialise the app
+// Main function to initialise the app
 function initApp() {
-  createGraph();
   initMain();
-
-  // Other functions
+  initFilters();
+  createGraph();
 }
 
 // Initialise the app.
