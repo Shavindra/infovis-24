@@ -8,5 +8,4 @@ services:
             PORT: 5080
         volumes:
             - ./src:/app/src
-volumes:
-    nodemodules: {}
+
