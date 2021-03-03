@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-  </head>
 
-  <body>
-    <div>
-      <input class="graph-search" type="text" />
+<head>
+  <title>Info Visualisation - Team 24</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div class="page-header">
+    <header>
+      <nav>
+        <span class="logo">T24</span>
+      </nav>
+
+    </header>
+    <div class="filters">
+      <div class="input-group">
+        <div class="input-field col iv">
+          <input id="search-artist" type="text" class="graph-search">
+          <label for="search-artist">Search artist</label>
+        </div>
+        <div class="input-field col iv">
+          <select class="icons">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="" data-icon="images/sample-1.jpg">example 1</option>
+            <option value="" data-icon="images/office.jpg">example 2</option>
+            <option value="" data-icon="images/yuna.jpg">example 3</option>
+          </select>
+          <label class="active">Select genre</label>
+        </div>
+      </div>
     </div>
-    <div id="app"></div>
-    <div id="graph"></div>
-   
+  </div>
+  <div class="page-content">
+    <section class="section">
+      <div id="app"></div>
+      <div id="graph"></div>
+    </section>
+    <section class="section">
+      Second section
+    </section>
+    </div>
     <!-- 
       At the bottom of the HTML file import the main JS file
        to ensure all the HTML tags are rendered 
     -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="module" src="./index.js"></script>
-  </body>
+</body>
+
 </html>

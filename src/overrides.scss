@@ -1,0 +1,55 @@
+header {
+    nav {
+        box-shadow: none !important;
+        height: auto;
+        background: none;
+        line-height: 1;
+    }
+}
+
+input {
+    color: #CECECE;
+}
+
+.iv {
+    .select-wrapper input.select-dropdown,
+    input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+        height: 24px;
+        font-size: 1.4rem;
+    }
+
+    &.input-field {
+        line-height: 1;
+        font-size: 1.4rem;
+        margin-right: 16px;
+        width: 200px;
+        margin-bottom: 0;
+
+        & > label {
+            font-size: 1.4rem;
+            transform: translateY(0);
+        }
+    }
+
+    .select-wrapper {
+        
+       & + label {
+            transform: translateY(12px) scale(0.8) !important;
+        }
+
+        & {
+            input.select-dropdown {
+                line-height: 1;
+                font-size: 1.4rem;
+                & > label {
+                    font-size: 1.4rem;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+
+    .caret {
+        fill: #CECECE;
+    }
+}

@@ -1,0 +1,231 @@
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  color: #CECECE;
+  background: #16213e;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+// HEADER
+header {
+  padding: 16px;
+  height: unset;
+  background: #1a1a2e;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+// CONTENT
+.page-content {
+  padding:0 16px;
+}
+
+// Filters
+.filters {
+  margin-top: 0;
+  padding-top: 16px;
+}
+
+.input-group {
+  justify-content: flex-end;
+  display: flex;
+}
+
+// LAYOUT
+.page-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.section {
+  padding: 16px 0;
+  height: calc(100vh - 48px);
+  margin-top: 48px;
+}
+
+// ICONS
+i.tiny {
+  font-size: 1.4rem;
+}
+
+.input-label-text {
+  display: flex;
+  line-height: 1;
+  align-items: center;
+  i {
+    margin-left: 2px;
+  }
+  
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.full-width {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: calc(100vh - 48px);
+  max-width: none;
+  display: flex;
+  background:#111; // #080909; // #191A1A;
+}
+
+nav, ul, a, nav ul a {
+  font-size: 1.6rem
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 0 0 16px 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 0 0 16px 0;
+  font-weight: 600;
+}
+
+.container {
+  margin: 24px auto;
+}
+
+p {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.infovis.input-field {
+  display: block;
+}
+
+.infovis {
+  background: #111; // #080909;
+  color: #ccc;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+nav {
+  height: 48px;
+  line-height: 48px;
+}
+
+// INPUT FIELDS
+.input-field-row {
+  display: block;
+}
+
+.input-field-item {
+  display: flex;
+}
+
+.input-label-text {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+// ANALYSIS VIEW 
+
+
+// FILTERS
+select {
+  border: 0px;
+  outline: 0px;
+}
+
+.filter-group {
+  background: #0F0F0F;
+
+  button, input, optgroup, select, textarea , label, [type="checkbox"]+span:not(.lever) {
+    font-size: 1.3rem !important;
+  }
+}
+
+.filter-section {
+  margin-top: 16px;
+}
+
+.filter-group {
+  padding: 16px;  
+  button, input, optgroup, select, textarea , label, [type="checkbox"]+span:not(.lever) {
+    font-size: 1.3rem !important;
+  }
+
+  [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after, [type="checkbox"].filled-in:checked+span:not(.lever):after {
+    height: 16px;
+    width: 16px;
+  }
+
+  [type="checkbox"]+span:not(.lever) {
+    height: 16px;
+    line-height: 16px;
+    padding-left: 24px;
+  }
+
+  [type="checkbox"].filled-in:checked+span:not(.lever):before {
+    top: -1px;
+    left: 1px;
+    width: 6px;
+    height: 12px;
+  }
+}
+
+.filters {
+  display: flex;
+  > * {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+.filters .input-field-row {
+  display: block;
+  margin: 16px 0; 
+ 
+}
+
+.input-field-row {
+  margin: 8px 0 16px 0;
+
+  &--children {
+    margin-left: 8px;
+    padding-left: 16px;
+    border-left: 1px solid #666666;
+
+  }
+}
+
+.input-field-row--children > .input-field-row {
+  margin: 8px 0;
+}
+
+
+  h1 {
+    font-size: 2.6rem;
+    line-height: 1;
+    display: flex;
+  }
+

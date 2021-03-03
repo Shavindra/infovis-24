@@ -8,7 +8,12 @@
     "build": "parcel build ./src/index.html"
   },
   "dependencies": {
+    "@material/textfield": "^10.0.0",
+    "crossfilter2": "^1.5.4",
     "d3": "6.5.0",
+    "d3-force": "^2.1.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "mitt": "^2.1.0",
     "parcel": "^2.0.0-beta.1"
   },
   "devDependencies": {
